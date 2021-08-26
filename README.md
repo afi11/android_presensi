@@ -1,5 +1,5 @@
 ## Usage Application
-> To do attendance employee
+> To do attendance employee, employee can do attendance if he is in radius 200m from the place of attendance.
 
 ## Screenshots
 <p align="left">
