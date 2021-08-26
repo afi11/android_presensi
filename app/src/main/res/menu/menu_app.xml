@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group
+        android:id="@+id/group1"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/menu_app_dashboard"
+            android:title="Dashboard" />
+    </group>
+    <item android:title="Presensi">
+        <menu>
+            <group
+                android:id="@+id/group2"
+                android:checkableBehavior="single">
+                <item
+                    android:id="@+id/menu_app_presensi"
+                    android:title="Kehadiran" />
+                <item
+                    android:id="@+id/menu_log_presensi"
+                    android:title="Riwayat Presensi" />
+                <item
+                    android:id="@+id/menu_log_absensi"
+                    android:title="Riwayat Ketidakhadiran / Cuti" />
+            </group>
+        </menu>
+    </item>
+    <item android:title="Penugasan">
+        <menu>
+            <group
+                android:id="@+id/group4"
+                android:checkableBehavior="single">
+                <item
+                    android:id="@+id/menu_aktivitas"
+                    android:title="Aktivitas" />
+            </group>
+            <group
+                android:id="@+id/group6"
+                android:checkableBehavior="single">
+                <item
+                    android:id="@+id/menu_penugasan"
+                    android:title="Penugasan" />
+            </group>
+        </menu>
+    </item>
+    <group
+        android:id="@+id/group3"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/menu_logout_test"
+            android:title="Logout" />
+    </group>
+</menu>

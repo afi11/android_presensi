@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="@color/bgapp"
+    tools:context=".views.absensi.AbsensiFragment">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginHorizontal="12dp"
+        android:layout_marginVertical="8dp"
+        android:elevation="6dp"
+        android:background="@drawable/bg_form_input">
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginStart="16dp"
+                    android:text="Upload Bukti Izin"
+                    android:textColor="@color/colorBg"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <RelativeLayout
+                    android:id="@+id/btnAddFile"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="16dp">
+
+                    <TextView
+                        android:id="@+id/textView4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:textStyle="bold"
+                        android:textColor="#286cff"
+                        android:text="Klik untuk mengambil file (gambar / pdf)" />
+
+                    <ImageView
+                        android:id="@+id/imageView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:src="@drawable/ic_file" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/txtSelectedFile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginStart="16dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@color/colorLine" />
+
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginStart="16dp"
+                    android:text="Lama Izin"
+                    android:textColor="@color/colorBg"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginHorizontal="16dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="6dp"
+                                android:text="Tanggal Mulai"
+                                android:textColor="@color/colorBg"
+                                android:textSize="16sp"
+                                android:textStyle="bold" />
+
+                            <RelativeLayout
+                                android:id="@+id/pickTglMulai"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:padding="4dp"
+                                android:layout_marginTop="2dp">
+
+                                <TextView
+                                    android:id="@+id/textViewTglSelected"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerVertical="true"
+                                    android:layout_marginTop="4dp"
+                                    android:inputType="textMultiLine"
+                                    android:layout_toLeftOf="@+id/iconTgl1"
+                                    android:text="Pilih tanggal mulai izin"
+                                    android:textColor="#286cff"
+                                    android:textStyle="bold" />
+
+                                <ImageView
+                                    android:id="@+id/iconTgl1"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="6dp"
+                                    android:layout_alignParentRight="true"
+                                    android:src="@drawable/ic_date_range" />
+                            </RelativeLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="6dp"
+                                android:text="Tanggal Selesai"
+                                android:textColor="@color/colorBg"
+                                android:textSize="16sp"
+                                android:textStyle="bold" />
+
+                            <RelativeLayout
+                                android:id="@+id/pickTglSelesai"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:padding="4dp"
+                                android:layout_marginTop="2dp">
+
+                                <TextView
+                                    android:id="@+id/textViewTglSelected2"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerVertical="true"
+                                    android:layout_marginTop="4dp"
+                                    android:inputType="textMultiLine"
+                                    android:layout_toLeftOf="@+id/iconTgl2"
+                                    android:text="Pilih tanggal selesai izin"
+                                    android:textColor="#286cff"
+                                    android:textStyle="bold" />
+
+                                <ImageView
+                                    android:id="@+id/iconTgl2"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="6dp"
+                                    android:layout_alignParentRight="true"
+                                    android:src="@drawable/ic_date_range" />
+                            </RelativeLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@color/colorLine" />
+
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginStart="16dp"
+                    android:text="Keterangan"
+                    android:textColor="@color/colorBg"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+                <EditText
+                    android:id="@+id/editTextKeterangan"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginStart="16dp"
+                    android:background="@drawable/bgforminput"
+                    android:inputType="textMultiLine"
+                    android:gravity="top"
+                    android:hint="Keterangan"
+                    android:padding="8dp" />
+
+                <RelativeLayout
+                    android:id="@+id/buttonSubmitAbsensi"
+                    android:layout_width="match_parent"
+                    android:layout_alignParentBottom="true"
+                    android:background="@drawable/bgbutton"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="16dp"
+                    android:layout_marginTop="24dp"
+                    android:layout_marginBottom="16dp"
+                    android:elevation="6dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@android:color/white"
+                        android:letterSpacing="0.1"
+                        android:layout_centerInParent="true"
+                        android:textSize="18sp"
+                        android:text="Submit" />
+                </RelativeLayout>
+            </LinearLayout>
+
+</ScrollView>

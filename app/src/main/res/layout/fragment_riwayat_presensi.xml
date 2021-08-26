@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".views.presensi.RiwayatPresensiFragment">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/bgapp"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="8dp"
+                android:layout_marginVertical="8dp"
+                android:elevation="2dp"
+                android:padding="8dp"
+                android:background="@drawable/bg_form_input"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:text="Pilih Periode" />
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:stretchColumns="*">
+                    <TableRow>
+                        <LinearLayout
+                            android:id="@+id/btnPickTglAwal"
+                            android:orientation="horizontal"
+                            android:padding="4dp"
+                            android:gravity="center_vertical">
+                            <TextView
+                                android:id="@+id/tglSelectedAwal"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="16sp"
+                                android:text="Tanggal Awal" />
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/ic_date_range" />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:id="@+id/btnPickTglAkhir"
+                            android:padding="4dp"
+                            android:orientation="horizontal"
+                            android:gravity="center_vertical">
+                            <TextView
+                                android:id="@+id/tglSelectedAkhir"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="16sp"
+                                android:text="Tanggal Akhir" />
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/ic_date_range" />
+                        </LinearLayout>
+                        <RelativeLayout
+                            android:id="@+id/btnSearch"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:background="@drawable/bgbuttonfilter">
+                            <RelativeLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginHorizontal="8dp"
+                                android:layout_centerHorizontal="true">
+                                <ImageView
+                                    android:id="@+id/searchLogo"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:src="@drawable/ic_search" />
+                            </RelativeLayout>
+                        </RelativeLayout>
+                    </TableRow>
+                </TableLayout>
+                <!--            <RelativeLayout-->
+                <!--                android:layout_width="match_parent"-->
+                <!--                android:layout_height="wrap_content"-->
+                <!--                android:orientation="horizontal">-->
+                <!--                <RelativeLayout-->
+                <!--                    android:id="@+id/divyear"-->
+                <!--                    android:layout_width="wrap_content"-->
+                <!--                    android:layout_height="wrap_content"-->
+                <!--                    android:background="@drawable/bgforminput"-->
+                <!--                    android:layout_marginEnd="8dp">-->
+                <!--                    <Spinner-->
+                <!--                        android:id="@+id/year_spinner"-->
+                <!--                        android:layout_width="wrap_content"-->
+                <!--                        android:layout_height="wrap_content" />-->
+                <!--                </RelativeLayout>-->
+                <!--                <RelativeLayout-->
+                <!--                    android:id="@+id/divmonth"-->
+                <!--                    android:layout_width="wrap_content"-->
+                <!--                    android:layout_height="wrap_content"-->
+                <!--                    android:layout_toRightOf="@+id/divyear"-->
+                <!--                    android:layout_toLeftOf="@+id/btnSearch"-->
+                <!--                    android:layout_marginEnd="8dp"-->
+                <!--                    android:background="@drawable/bgforminput">-->
+                <!--                    <Spinner-->
+                <!--                        android:id="@+id/month_spinner"-->
+                <!--                        android:layout_width="wrap_content"-->
+                <!--                        android:layout_height="wrap_content" />-->
+                <!--                </RelativeLayout>-->
+                <!--            </RelativeLayout>-->
+            </LinearLayout>
+            <RelativeLayout
+                android:id="@+id/divalert"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="8dp"
+                android:layout_marginVertical="8dp"
+                android:elevation="6dp"
+                android:padding="8dp"
+                android:background="@drawable/bgalertsuccess">
+                <TextView
+                    android:id="@+id/textViewAlert"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toLeftOf="@+id/clearButton"
+                    android:textSize="14sp"
+                    android:letterSpacing="0.1"
+                    android:textColor="@color/white"
+                    android:inputType="textMultiLine"
+                    android:text="Menampilkan riwayat presensi pada bulan dan tahun sekian" />
+                <ImageView
+                    android:id="@+id/clearButton"
+                    android:layout_alignParentRight="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_clear" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/txtJudulStatistik"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="...."
+                android:textSize="16sp"
+                android:inputType="textMultiLine"
+                android:layout_marginHorizontal="8dp"
+                android:layout_marginTop="8dp"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rcStatistikPresensi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/txtJudulPengajuan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Riwayat Semua Presensi"
+                android:textSize="16sp"
+                android:layout_marginHorizontal="8dp"
+                android:layout_marginTop="16dp"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerViewLogPresensi"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+        </LinearLayout>
+    </ScrollView>
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/btnAddAbsensi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_gravity="bottom|end"
+        android:clickable="true"
+        android:src="@drawable/ic_add" />
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

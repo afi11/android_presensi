@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="codeafifudin.fatakhul.projectta">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+
+    <application
+        android:name=".App"
+        android:allowBackup="true"
+        android:icon="@drawable/logokemenag"
+        android:label="PresenGas"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.ProjectTa"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".views.penugasan.DetailTugasActivity"></activity>
+        <activity android:name=".views.alarm.AlarmPresensiActivity" />
+        <activity android:name=".views.penugasan.EditTugasActivity" />
+        <activity android:name=".SplashScreenActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".views.absensi.TambahAbsensiActivity" />
+        <activity android:name=".views.aktivitas.TambahAktivitasActivity" />
+        <activity android:name=".views.presensi.OpenFileIzinActivity" />
+        <activity android:name=".views.aktivitas.OpenFileIzinAktivitasActivity" />
+        <activity android:name=".views.penugasan.OpenFileIzinPenugasanActivity" />
+        <activity android:name=".views.auth.LoginActivity" />
+
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@android:drawable/ic_lock_idle_alarm" />
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_color"
+            android:resource="@color/colorBg" />
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_id"
+            android:value="PresensiNotification" />
+
+        <service
+            android:name=".services.GeofenceRegistrationService"
+            android:enabled="true"
+            android:exported="false" />
+
+        <receiver android:name=".receiver.AlarmPresensiReciver" />
+        <receiver
+            android:name=".receiver.NotificationReceiver"
+            android:enabled="true" />
+
+        <service
+            android:name=".services.NotPresenceService"
+            android:enabled="true" />
+        <service
+            android:name=".notification.FirebaseNotificationConfig"
+            android:directBootAware="true"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service> <!-- <service android:name=".services.NotPresenceService" -->
+        <!-- android:enabled="true" -->
+        <!-- android:exported="true" /> -->
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyAwkdmxXrs_b4byBf137gRRN174FNeu2zQ" />
+
+        <activity android:name=".MainActivity" />
+    </application>
+
+</manifest>

@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rowLogPresensi"
+    android:layout_marginTop="8dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="8dp"
+        android:layout_marginVertical="4dp"
+        app:cardElevation="2dp"
+        app:cardCornerRadius="8dp"
+        app:cardBackgroundColor="@color/white">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="8dp">
+            <TextView
+                android:id="@+id/tglPresensi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginVertical="8dp"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:text=""/>
+            <TableLayout
+                android:id="@+id/tablePresensi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:stretchColumns="*">
+                <TableRow
+                    android:padding="4dp"
+                    android:background="@drawable/border_bottom">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Jam Masuk"
+                        android:textStyle="bold"
+                        android:textSize="16sp"
+                        android:fontFamily="sans-serif-medium"/>
+                    <TextView
+                        android:id="@+id/jamMasuk"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="16sp"/>
+                </TableRow>
+                <TableRow
+                    android:padding="4dp"
+                    android:background="@drawable/border_bottom">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Jam Pulang"
+                        android:textStyle="bold"
+                        android:textSize="16sp"/>
+                    <TextView
+                        android:id="@+id/jamPulang"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="16sp"
+                        android:text=" " />
+                </TableRow>
+                <TableRow
+                    android:padding="4dp"
+                    android:background="@drawable/border_bottom">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Ket.Jam Masuk"
+                        android:textStyle="bold"
+                        android:textSize="16sp"/>
+                    <TextView
+                        android:id="@+id/ketJamMasuk"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="16sp"
+                        android:text=" " />
+                </TableRow>
+                <TableRow
+                    android:padding="4dp"
+                    android:background="@drawable/border_bottom">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Ket.Jam Pulang"
+                        android:textStyle="bold"
+                        android:textSize="16sp"/>
+                    <TextView
+                        android:id="@+id/ketJamPulang"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="16sp"
+                        android:text=" " />
+                </TableRow>
+            </TableLayout>
+            <TableLayout
+                android:id="@+id/tableAbsensi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:stretchColumns="*">
+                <TableRow
+                    android:padding="4dp"
+                    android:background="@drawable/border_bottom">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Tipe"
+                        android:textStyle="bold"
+                        android:textSize="16sp"/>
+                    <TextView
+                        android:id="@+id/tipeIzin"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="16sp"
+                        android:text=" " />
+                </TableRow>
+                <TableRow
+                    android:padding="4dp"
+                    android:background="@drawable/border_bottom">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Tanggal Izin"
+                        android:textStyle="bold"
+                        android:textSize="16sp" />
+                    <TextView
+                        android:id="@+id/tglIzin"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="16sp"
+                        android:text=" " />
+                </TableRow>
+                <TableRow
+                    android:padding="4dp"
+                    android:background="@drawable/border_bottom">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Lama Izin"
+                        android:textStyle="bold"
+                        android:textSize="16sp" />
+                    <TextView
+                        android:id="@+id/txtLamaIzin"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="16sp"
+                        android:text=" " />
+                </TableRow>
+                <TableRow
+                    android:padding="4dp"
+                    android:background="@drawable/border_bottom">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="File Izin"
+                        android:textStyle="bold"
+                        android:textSize="16sp"/>
+                    <TextView
+                        android:id="@+id/fileIzin"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="16sp"
+                        android:text=" " />
+                </TableRow>
+                <TableRow
+                    android:padding="4dp"
+                    android:background="@drawable/border_bottom">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Status"
+                        android:textStyle="bold"
+                        android:textSize="16sp"/>
+                    <TextView
+                        android:id="@+id/textViewStatusIzin"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="16sp"
+                        android:text=" " />
+                </TableRow>
+                <TableRow
+                    android:padding="4dp"
+                    android:background="@drawable/border_bottom">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Keterangan"
+                        android:textStyle="bold"
+                        android:textSize="16sp"
+                        android:fontFamily="sans-serif-medium"/>
+                    <TextView
+                        android:id="@+id/ketIzin"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="16sp"
+                        android:text=" " />
+                </TableRow>
+            </TableLayout>
+            <TableLayout
+                android:id="@+id/rowActionBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="8dp"
+                android:stretchColumns="*">
+                <TableRow>
+                    <TextView
+                        android:id="@+id/textViewNoteAdmin"
+                        android:inputType="textMultiLine"
+                        android:textColor="@color/danger" />
+                    <TextView
+                        android:id="@+id/btnEditIzin"
+                        android:textAlignment="textEnd"
+                        android:textStyle="bold"
+                        android:textColor="@color/colorBg"
+                        android:text="Edit"
+                        android:textSize="18sp"/>
+                </TableRow>
+            </TableLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Project Ta</string>
+    <string name="google_map_key">AIzaSyAwkdmxXrs_b4byBf137gRRN174FNeu2zQ</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string-array name="months">
+        <item>Januari</item>
+        <item>Febuari</item>
+        <item>Maret</item>
+        <item>April</item>
+        <item>Mei</item>
+        <item>Juni</item>
+        <item>Juli</item>
+        <item>Agustus</item>
+        <item>September</item>
+        <item>Oktober</item>
+        <item>November</item>
+        <item>Desember</item>
+    </string-array>
+    <string-array name="tipeizin">
+        <item>Sakit</item>
+        <item>Dinas Luar</item>
+        <item>Lainnya</item>
+    </string-array>
+</resources>
