@@ -4,7 +4,7 @@
 ## Screenshots
 <p align="left">
   <img src="./screenshots/dashboard.jpg" width="250">
-  <img src="./screenshots/det_presensi.jpg" width="250">
+  <img src="./screenshots/logpresensi.jpg" width="250">
   <img src="./screenshots/presensi.jpg" width="250">
 </p>
 
